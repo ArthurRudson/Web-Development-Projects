@@ -4,32 +4,32 @@ import App from "./components/App";
 
 ReactDOM.render(<App />, document.getElementById("root"));
 
-// var numbers = [3, 56, 2, 48, 5];
+var numbers = [3, 56, 2, 48, 5];
 
-////Map -Create a new array by doing something with each item in an array.
-// const newNumbers = numbers.map(function (x) {
-//   return x * 2;
-// });
+const newNumber1 = numbers.map(x => x * x)
+
+//Map -Create a new array by doing something with each item in an array.
+ const newNumber2 = numbers.map( x => x * 2);
 
 //////Filter - Create a new array by keeping the items that return true.
-// const newNumbers = numbers.filter(function(num) {
-//   return num < 10;
-// });
+ const newNumber3 = numbers.filter(x => x < 10 );
+
 
 //Reduce - Accumulate a value by doing something to each item in an array.
-// var newNumber = numbers.reduce(function (accumulator, currentNumber) {
-//     return accumulator + currentNumber;
-// })
+ var newNumber4 = numbers.reduce((x, y) =>  x + y )
 
 ////Find - find the first item that matches from an array.
-// const newNumber = numbers.find(function (num) {
-//   return num > 10;
-// })
+ const newNumber5 = numbers.find(x => x > 10)
+
 
 ////FindIndex - find the index of the first item that matches.
-// const newNumber = numbers.findIndex(function (num) {
-//   return num > 10;
-// })
+ const newNumber = numbers.findIndex( x => x > 10)
+
+console.log(newNumber1)
+console.log(newNumber2)
+console.log(newNumber3)
+console.log(newNumber4)
+console.log(newNumber5)
 
 // If you're running this locally in VS Code use the commands:
 // npm install
